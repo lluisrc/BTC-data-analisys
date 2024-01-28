@@ -1,3 +1,5 @@
+Realizar una buena documentacion para ayudarme en un futuro o que otra persona le pueda ayudar
+
 CREATE TABLE `BTC_price` (
   `day` DATE,
   `price` FLOAT,
