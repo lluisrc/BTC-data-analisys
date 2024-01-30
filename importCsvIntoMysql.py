@@ -4,10 +4,10 @@ from datetime import datetime
 
 # Conexion to mysql
 conexion = mysql.connector.connect(
-    host="192.168.178.53",
-    user="lroca",
-    password="lroca",
-    database="BTC_blocks"
+    host="",
+    user="",
+    password="",
+    database=""
 )
 
 
