@@ -1,5 +1,8 @@
-Realizar una buena documentacion para ayudarme en un futuro o que otra persona le pueda ayudar
+In this project you will see com tu use python scripts to import massive data to mysql database.
 
+First at all we have to create a mysql database with the next tables:
+- BTC_price.
+```sql
 CREATE TABLE `BTC_price` (
   `day` DATE,
   `price` FLOAT,
@@ -10,7 +13,9 @@ CREATE TABLE `BTC_price` (
   `change` FLOAT,
   PRIMARY KEY (`day`)
 )
-
+```
+- BTC_blocks.
+```sql
 CREATE TABLE BTC_blocks (
   id INT,
   hash VARCHAR(64),
@@ -34,3 +39,8 @@ CREATE TABLE BTC_blocks (
   guessed_miner VARCHAR(64),
   PRIMARY KEY (id)
   );
+```
+
+Now we can use python scripts for download, unzip and import data to mysql database.
+> [!NOTE]
+> You have to modify the script to write the corrects parameters to connect to your mysql.
